@@ -1,0 +1,12 @@
+.container{
+  background:white;
+  width: 80%;
+  height: 80%;
+}
+.logout{
+  cursor: pointer;
+  background-color: #bfedd3;
+    width: 50px;
+    align-items: center;
+    padding: 5px;
+}
