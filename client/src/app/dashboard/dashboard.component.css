@@ -5,8 +5,30 @@
 }
 .logout{
   cursor: pointer;
-  background-color: #bfedd3;
     width: 50px;
     align-items: center;
     padding: 5px;
+    background-color: cornflowerblue;
+    color: white;
+    border-width: 1;
+    border-color: cornflowerblue;
+    border-radius: 4px;
+
+}
+
+.btn{
+  background-color: cornflowerblue;
+  color: white;
+  border-width: 1;
+  border-color: cornflowerblue;
+  border-radius: 4px;
+  width: 80px;
+  align-items: center;
+}
+
+h1{
+  color: cornflowerblue;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    text-align: center;
 }

@@ -20,10 +20,13 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true
   },
+  emailToken: {
+    type: String,
+    required: true,
+  },
   validationEmail: {
     type: Boolean,
-    unique: true,
-    default: false
+    default: false,
   },
   encry_password: {
     type: String,

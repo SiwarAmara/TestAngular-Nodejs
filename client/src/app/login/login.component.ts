@@ -45,7 +45,8 @@ export class LoginComponent implements OnInit {
         this.router.navigate((['/dashboard']))
       },
       (error) => {
-      this.errorMsg="Email or password invalide"}
+
+      this.errorMsg=error.error.error}
     )
   
    

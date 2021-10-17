@@ -43,7 +43,7 @@ getAllLink(){
     ) 
   }
   urlClicked(short:any){
-    this.urlService.urlClicked(short).subscribe(
+     this.urlService.urlClicked(short).subscribe(
       (data) => {
         const res:any =data;
         console.log(res);

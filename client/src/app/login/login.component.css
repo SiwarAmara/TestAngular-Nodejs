@@ -15,21 +15,41 @@
 }
 
 
-
+ 
 .app-container {
   min-height: 320px;
   overflow: hidden;
 }
 
-.btn-delete-user {
-  width: 40px;
-  text-align: center;
-  box-sizing: content-box;
-}
+
 .form-group{
   margin:10px;
 }
 
 .nom{
   width:15%
+}
+.msg-error{
+  color :red;
+  margin: 4px;
+}
+h2{
+  color: cornflowerblue;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    text-align: center;
+}
+.login-btn{
+  background-color: cornflowerblue;
+  color: white;
+  border-width: 1;
+  border-color: cornflowerblue;
+  border-radius: 4px;
+}
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
 }

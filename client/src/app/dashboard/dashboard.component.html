@@ -3,7 +3,7 @@
   <form (ngSubmit)="addLink(fullUrl.value)">
     <label  >Url</label>
     <input  placeholder="Url"  name="fullUrl" id="fullUrl" #fullUrl>
-    <input type="submit" value="Add" style="border: 0px;">
+    <input type="submit" value="Add" style="border: 0px;" class="btn" >
   </form>
      
       
@@ -20,14 +20,14 @@
       <tbody>
      
           <tr *ngFor="let item of urlList">
-            <td><a [href]="item.full">{{item.full}}</a></td>
-            <td><a [href]="item.short" (click)="urlClicked(item.short)">{{item.short}}</a></td>
+            <td><a [href]="item.full" >{{item.full}}</a></td>
+            <td><a a [href]="item.short"  (click)="urlClicked(item.short)">{{item.short}}</a></td>
             <td>{{item.clicks}}</td>
          </tr>
 
       </tbody>
     </table>
 
-    <h3 class="logout" (click)="logout()">logout</h3>
+    <h3 class="logout " (click)="logout()">logout</h3>
   </div>
 

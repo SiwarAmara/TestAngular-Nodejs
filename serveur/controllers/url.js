@@ -10,19 +10,21 @@ exports.getAll = (req, res) => {
     })
 })
 }
-
+ 
 exports.AddShortUrl = (req, res) => {
   
     ShortUrl.create({ full: req.body.fullUrl },(err, shortUrls) => {
-   return res.json({
+
+         return res.json({
     message: "Success",
     shortUrls
   })
-})
+ })
 }
+
+
 exports.urlClicked = (req, res) => {
- 
-   ShortUrl.findOne({ short: req.params.shortUrl }, (err, shortUrl) => {
+   ShortUrl.findOne({ short: req.params.shortUrl }, (err, shortUrl) => {  
     if (shortUrl == null) return res.sendStatus(404)
   
     shortUrl.clicks++
@@ -30,7 +32,7 @@ exports.urlClicked = (req, res) => {
   
     return res.json({
       message: "Success",
-      shortUrl
+      shortUrl 
     })
    })
 }

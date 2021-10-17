@@ -8,6 +8,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { InscriptionComponent } from './inscription/inscription.component';
+import { VerifyEmailComponent } from './verify-email/verify-email.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { InscriptionComponent } from './inscription/inscription.component';
     LoginComponent,
     DashboardComponent,
     NavbarComponent,
-    InscriptionComponent
+    InscriptionComponent,
+    VerifyEmailComponent
   ],
   imports: [
     BrowserModule,
